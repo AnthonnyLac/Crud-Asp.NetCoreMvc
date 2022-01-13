@@ -1,0 +1,36 @@
+﻿@model New_World.Models.NewWorldDb
+@{
+    ViewData["Title"] = "List";
+    List<NewWorldDb> newWorldDb = ViewBag.Lista;
+}
+
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @{
+            foreach (var a in newWorldDb)
+            {
+                <tr>
+                    <th scope="row">@a.Id</th>
+                    <td>@a.Name</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-primary" href="~/Home/DeleteUser" role="button">Deletar User :D</a>
+<a class="btn btn-primary" href="~/Home/EditUser" role="button">Edit User :p</a>
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form asp-controller="SingUp" asp-action="UpdateUser" method="post">
+    <div class="row g-3 align-items-center">
+        <div class="col-auto">
+            <label for="Id" class="col-form-label">Id numero:</label>
+        </div>
+        <div class="col-auto">
+            <input type="number" id="Id" name="Id" class="form-control">
+        </div>
+
+        <div class="col-auto">
+            <label for="newName" class="col-form-label">Novo Nome:</label>
+        </div>
+        <div class="col-auto">
+            <input type="text" id="newName" name="newName" class="form-control">
+        </div>
+
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </div>
+
+    </div>
+</form>

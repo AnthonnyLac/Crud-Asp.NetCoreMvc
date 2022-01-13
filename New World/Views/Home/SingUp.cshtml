@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "SingUp";
+}
+
+<form asp-controller="SingUp" asp-action="SaveSingUp" method="post">
+    <label for="user" class="form-label">Your legendary name</label>
+    <input type="text" id="user" name="user" class="form-control">
+    <div id="text" class="form-text">
+        Escolha um nome bem legal :P
+    </div>
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+   
+</form>
